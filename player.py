@@ -9,6 +9,10 @@ class Player(CircleShape):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
         self.timer = 0
+        self.score = PLAYER_SCORE
+        self.lives = PLAYER_LIVES
+        self.shoot_fired = PLAYER_SHOOT_FIRED
+
 
     def draw(self, screen):
         pygame.draw.polygon(screen, "white", self.triangle(), 2)

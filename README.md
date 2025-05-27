@@ -1,5 +1,5 @@
-# asteroids
-asteroids
+# asteroids 
+## Bonus tasks
 
 
 Extending the Project
