@@ -42,10 +42,11 @@ def main():
                 sys.exit()
     
             for bullet in shots:
-                print("IN")
                 if bullet.check_collision(asteroid):
                     print("Hit!")
+
                     asteroid.kill()
+                    asteroid.split()
                     bullet.kill()                
 
         screen.fill("black")
