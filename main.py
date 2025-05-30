@@ -47,6 +47,8 @@ def main():
 
         # Draw the score on the screen
         score_text = font.render(f"Score: {player.score}", True, "white")
+        live_test = font.render(f"Lives: {player.lives}", True, "white")
+        screen.blit(live_test, (10, 40))
         screen.blit(score_text, (10, 10))
 
         for asteroid in asteroids:
@@ -56,8 +58,6 @@ def main():
     
             for bullet in shots:
                 if bullet.check_collision(asteroid):
-                    print("Hit!")
-
                     asteroid.kill()
                     player.score += 1
                     player.shoot_fired += 1

@@ -13,7 +13,6 @@ class Player(CircleShape):
         self.lives = PLAYER_LIVES
         self.shoot_fired = PLAYER_SHOOT_FIRED
 
-
     def draw(self, screen):
         pygame.draw.polygon(screen, "white", self.triangle(), 2)
 
